@@ -25,7 +25,7 @@ public class EventServices {
             entity = repository.save(entity);
             return new EventDTO(entity);
         }catch (EntityNotFoundException e ){
-            throw new ResourceNotFoundException("Id not found " + id);
+            throw new ResourceNotFoundException("Id não encontrado " + id);
         }
     }
 
